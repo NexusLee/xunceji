@@ -108,13 +108,28 @@ $(function(){
                     clearInterval(intervalQuery);
 
                     //添加点标记，并使用自己的icon
-                    new AMap.Marker({
+                    var marker = new AMap.Marker({
                         map: map,
                         position: item.latlng,
                         icon: new AMap.Icon({
                             size: new AMap.Size(40, 40),  //图标大小
                             image: "images/toilet.png"
                         })
+                    });
+
+                    //实例化信息窗体
+                    var title = item.name,
+                        content = [];
+                    content.push("<div class='info-title'>" + title + "</div>");
+                    content.push("<div class='info-content'><p>地址：" + item.addr + "</p></div>");
+
+
+                    var content = '<div class="info-title">' + title + '</div><div class="info-content">' +
+                        '地址' + item.addr;
+
+                    marker.on('click', function() {
+                        infoWindow.setContent(content);
+                        infoWindow.open(map, marker.getPosition());
                     });
                 }
             })
