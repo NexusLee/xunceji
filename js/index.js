@@ -112,7 +112,7 @@ $(function(){
                         map: map,
                         position: item.latlng,
                         icon: new AMap.Icon({
-                            size: new AMap.Size(27, 38),  //图标大小
+                            size: new AMap.Size(40, 40),  //图标大小
                             image: "images/toilet.png"
                         })
                     });
