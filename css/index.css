@@ -1,0 +1,111 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#mapContainer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.cube{
+    position: fixed;
+    left: calc(50% - 193px);
+    bottom: 20px;
+    width: 386px;
+    height: 68px;
+    background-color: #ffffff;
+    opacity: .9;
+}
+
+.cube ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+.cube ul li {
+    height: 68px;
+    display:flex;
+    display: -webkit-flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.cube ul span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 15px;
+    border-radius: 40px;
+    background-color: red;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.js_dialog .weui-dialog {
+    max-width: 500px;
+}
+
+.js_dialog .weui-dialog .weui-dialog__bd {
+    padding: 0 0 .8em;;
+}
+
+.js_dialog .weui-dialog .weui-cells__title {
+    text-align: left;
+}
+
+.toast {
+    position: fixed;
+    top: 20px;
+    left: calc(50% - 50px);
+    width: 100px;
+    background-color: black;
+    opacity: .8;
+    border-radius: 4px;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    display: none;
+}
+
+#submit {
+    margin: 0 10px;
+}
+
+.info-title {
+    color: white;
+    font-size: 14px;
+    background-color:blue;
+    line-height: 26px;
+    padding: 0px 0 0 6px;
+    font-weight: lighter;
+    letter-spacing: 1px
+}
+
+.info-content {
+    font: 12px Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial;
+    padding: 4px;
+    color: #666666;
+    line-height: 23px;
+}
+
+.amap-icon img {
+    width: 40px;
+    height: 40px;
+}

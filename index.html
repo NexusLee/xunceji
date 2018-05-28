@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <title>寻厕记</title>
+    <link rel="stylesheet" type="text/css" href="css/weui.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+</head>
+<body>
+<div class="wrapper">
+    <div id="mapContainer">
+
+    </div>
+</div>
+<div class="cube">
+    <ul>
+        <li><span><i class="fa fa-edit"></i></span>点击添加</li>
+    </ul>
+</div>
+<div class="js_dialog" id="iosDialog1" style="display: none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+        <div class="weui-dialog__hd"><strong class="weui-dialog__title">新厕所</strong></div>
+        <div class="weui-dialog__bd">
+            <!--弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内-->
+
+            <div class="weui-cells__title">名称</div>
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <input class="toilet-name weui-input" type="text" maxlength="50" placeholder="请输入名称"/>
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cells__title">地址</div>
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <textarea class="toilet-addr weui-textarea" placeholder="请输入地址" rows="3" maxlength="200"></textarea>
+                        <div class="weui-textarea-counter"><span>0</span>/200</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-dialog__ft">
+            <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default weui-dialog__btn_cancel">取消</a>
+            <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary weui-dialog__btn_submit">提交</a>
+        </div>
+    </div>
+</div>
+<div class="toast">
+    点击地图添加
+</div>
+<div id="panel"></div>
+
+<script src="lib/jquery-3.3.1.min.js" type="application/javascript"></script>
+<script src="lib/nebulas.js" type="application/javascript"></script>
+<script src="lib/nebPay.js" type="application/javascript"></script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.6&key=a90781893ff3f3ed5dc22f8ce03aeb0c&plugin=AMap.AdvancedInfoWindow"></script>
+<script src="js/index.js" type="application/javascript"></script>
+</body>
+</html>
