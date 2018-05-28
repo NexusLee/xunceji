@@ -22,7 +22,7 @@ $(function(){
     var options = {
         goods: {
         },
-        callback: NebPay.config.testnetUrl,   //交易查询服务器地址
+        callback: NebPay.config.mainnetUrl,   //交易查询服务器地址
         listener: function(resp) {
             console.log(resp);
         } //为浏览器插件指定listener,处理交易返回结果
